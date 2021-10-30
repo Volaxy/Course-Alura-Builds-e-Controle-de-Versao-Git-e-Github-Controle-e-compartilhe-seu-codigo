@@ -24,11 +24,22 @@ Course URL -> [Git e Github Controle e Compartilhe seu Código](https://www.alur
 
 ## 02 - Iniciando os Trabalhos
 * Que um **commit** é a forma de salvar um estado ou versão do nosso código.
-* Como adicionar arquivos para serem commitados com `*git add*`.
-* Como commitar arquivos, utilizando o comando `*git commit*`.
-* Como verificar o histórico de commits, através do `*git log*` e algumas de suas opções:
-    * `*git log --oneline*`;
-    * `*git log -p*`;
-    * `*git log --pretty="parametros de formatação"*`;
+* Como adicionar arquivos para serem commitados com **`git add`**.
+* Como commitar arquivos, utilizando o comando **`git commit`**.
+* Como verificar o histórico de commits, através do **`git log`** e algumas de suas opções:
+    * **`git log --oneline`**;
+    * **`git log -p`**;
+    * **`git log --pretty="parametros de formatação"`**;
 * Como fazer o Git não monitorar arquivos, através do **.gitignore**.
 * Que não devemos realizar **commit**, ou seja, salvar um estado, da nossa aplicação que não esteja funcionando.
+
+## 03 - Compartilhando o Trabalho
+* O que são repositórios remotos;
+* Como criar um repositório Git sem uma cópia dos arquivos (com **`--bare`**) para ser utilizado como servidor;
+* Como adicionar links para os repositórios remotos, com o comando **`git remote add`**;
+* Como baixar um repositório pela primeira vez, clonando-o com o comando **`git clone`**;
+* Como enviar as nossas alterações para um repositório remoto, com **`git push`**;
+* Como atualizar o nosso repositório com os dados no repositório remoto, utilizando **`git pull`**;
+* O que é e para que serve o **`GitHub`**;
+* Como criar um repositório no **`GitHub`**;
+* Como adicionar um repositório do **`GitHub`** como repositório remoto.
