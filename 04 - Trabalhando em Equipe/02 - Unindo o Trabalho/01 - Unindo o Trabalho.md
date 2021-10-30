@@ -1,0 +1,15 @@
+Estamos entendendo como trabalhar com linhas de desenvolvimento diferentes, mas como é que conseguiremos trazer o trabalho que fizemos em uma delas para outra? Porque, suponhamos que temos duas branches, **titulo** e **master**, e trabalhamos na primeira. Porém, no repositório que se encontra na pasta "servidor", só temos a branch **master**, então sabemos que esta linha é a principal, onde queremos depositar o código que funciona.
+
+Iremos trabalhar na **titulo**, mas em algum momento precisaremos trazê-la para a **master**. Na ferramenta "Visualizing Git" criaremos a branch **titulo** e passaremos a trabalhar nela, com **`git checkout -b titulo`** (onde o -b indica que quando criarmos a branch, automaticamente iremos trabalhar na branch criada). Faremos um commit com **`git commit -m "Editando título"`**, e outro, com **`git commit -m "Adicionando lista no título"`**.
+
+Mas supondo que no arquivo principal, precisamos corrigir um erro, mas estamos em outro branch, que não tem nada a ver com nossas alterações de títulos. Então iremos retornar à **master** e corrigir o bug.
+
+Utilizaremos **`git checkout master`**, e depois **`git commit -m "Corrigindo bug"`**. Agora, sim, poderemos voltar à branch **titulo** e finalizá-lo. Analisando com calma, porém, entendemos que esta branch já está finalizada. Então, de que forma trazemos este trabalho, os dados desta linha em específico, para a que contém **head** e **master**?
+
+Ou seja, queremos unificar estas duas linhas, portanto usaremos o comando **`git merge titulo`**, e isto fará com que o Git automaticamente crie um commit com o branch atual e todo o conteúdo de nossa branch **titulo**. Na prática, estando logados como Vinicius, o que acontece é que, ao surgimento de um bug, as alterações de **titulo** não podem influenciar nesta correção de bug.
+
+Sendo assim, retornaremos à **master**, branch que não contém as alterações referentes a **titulo**. Após a alteração no projeto, faremos a adição e o commit normalmente, no Git Bash, e por fim executaremos **`git merge titulo`**, como visto anteriormente. Quando dermos um "Enter", será criado um commit de merge, ou seja, de junção de duas branches. Poderemos editar a mensagem exibida, mas caso não queiramos, para salvarmos e confirmarmos a mensagem, pressionaremos ":x + Enter" no editor Vim.
+
+Feita a junção, passamos a ter, na branch **master**, os dados do título alterado. Porém, se executarmos **`git log`**, não teremos os dois commits separadamente, e sim um referente ao merge. O Git cria isto para nós. Então, como será que poderemos fazer com que, em vez do Git criar este commit, ele pegue os dois commits e os adicione em nossa branch **master**?
+
+Como faremos com que ele mova estas branches e atualize a **master** apenas com os dois commits, sem criar um de merge?
