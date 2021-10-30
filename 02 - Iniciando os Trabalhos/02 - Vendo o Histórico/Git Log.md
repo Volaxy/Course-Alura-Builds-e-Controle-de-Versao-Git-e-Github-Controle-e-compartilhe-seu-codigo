@@ -1,0 +1,2 @@
+Conforme vimos anteriormente, podemos visualizar o histórico de alterações em nosso projeto de forma muito fácil, através do comando `*git log*`.
+Apesar de ser fácil, este comando é muito poderoso. Execute `*git log --help*` e veja algumas das opções possíveis. Para alguns exemplos mais fáceis de entender, você pode pesquisar sobre `*git log*` ou dar uma olhada neste link: [git log](https://devhints.io/git-log).
