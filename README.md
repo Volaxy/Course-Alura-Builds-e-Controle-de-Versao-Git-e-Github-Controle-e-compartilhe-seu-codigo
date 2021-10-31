@@ -8,6 +8,7 @@ Course URL -> [Git e Github Controle e Compartilhe seu Código](https://www.alur
 * [Git Official](https://git-scm.com/) - Site oficial do Git, contendo downloads e documentações completas de cada comando.
 * [Dev Hints](https://devhints.io/#git) - Descrição de comandos básicos do git de forma fácil.
 * [GitHub](https://github.com/) - Site para hospedagem de código remoto.
+* [Visualizing Git](https://git-school.github.io/visualizing-git/) - Site de demonstração de **commits** e **branchs**.
 
 ## Acronyms
 * VCS - (Version Control System) / Sistema de Controle de Versões
@@ -53,3 +54,18 @@ Course URL -> [Git e Github Controle e Compartilhe seu Código](https://www.alur
 * Que o **`git rebase`** não gera um commit de **merge**, simplificando o nosso log;
 * Como os conflitos são apresentados pelo Git;
 * Como resolver os conflitos e manter apenas as alterações desejadas com o Git.
+
+## 05 - Manipulando as Versões
+* O Git pode nos ajudar a desfazer alterações que não vamos utilizar;
+* Para desfazer uma alteração antes de adicioná-la para **commit** (com **`git add`**), podemos utilizar o comando **`git checkout -- <arquivos>`**;
+* Para desfazer uma alteração após adicioná-la para commit, antes precisamos executar o **`git reset HEAD <arquivos>`** e depois podemos desfazê-las com **`git checkout -- <arquivos>`**;
+* Para revertermos as alterações realizadas em um **commit**, o comando **`git revert`** pode ser a solução;
+* O comando **`git revert`** gera um novo **commit** informando que alterações foram desfeitas;
+* Para guardar um trabalho para retomá-lo posteriormente, podemos utilizar o **`git stash`**;
+* Para visualizar quais alterações estão na **stash**, podemos utilizar o comando **`git stash list`**;
+* Com o comando **`git stash apply <numero>`**, podemos aplicar uma alteração específica da **stash**;
+* O comando **`git stash drop <numero>`** remove determinado item da stash;
+* O comando **`git stash pop`** aplica e remove a última alteração que foi adicionada na **stash**;
+* O **`git checkout`** serve para deixar a cópia do código da nossa aplicação no estado que desejarmos:
+    * **`git checkout <branch>`** deixa o código no estado de uma **branch** com o nome **<branch>**;
+    * **`git checkout <hash>`** deixa o código no estado do *commit* com o hash <hash>.
