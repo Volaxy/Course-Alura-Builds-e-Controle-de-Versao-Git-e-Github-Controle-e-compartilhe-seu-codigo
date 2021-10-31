@@ -1,0 +1,7 @@
+Em vários outros sistemas de controle de conteúdo, existe o conceito de ***tag***, como quando você cria blogs e possui tags para marcar postagens que pertencem a categorias específicas.
+
+No Git, é possível utilizar um conceito bastante similar, também denominado tag, capaz de marcar um ponto na aplicação que não pode ser modificado, fixo. Assim, após ser lançada, a versão **0.1** nunca deixará de ser a versão **0.1**, e quaisquer alterações que forem feitas nela, serão incluídas na versão posterior.
+
+Isso não quer dizer que faremos um código que não será mais editável, apenas que criaremos um marco para onde poderemos ir, e que terá um código correspondente àquele estado. E para criarmos uma tag, informaremos isto ao Git, com **`git tag -a`**, seguido do nome que damos a ela, **v0.1.0**, que poderia ser qualquer outro. Além disto, poderemos incluir uma mensagem. O comando completo ficaria, então: **`git tag -a v0.1.0 -m "Lançando a primeira versão (BETA) da aplicação de cursos"`**.
+
+Ao darmos "Enter", geramos uma tag, um marco na nossa aplicação. E se executarmos **`git tag`**, são exibidos todos estes marcos disponíveis, que no caso por enquanto se resume a apenas um. Já sabemos que é possível fazer **push** de **master**, ou de qualquer outra branch, como com **`git push local master`** e depois **`git push local v0.1.0`** para enviarmos a tag ao servidor.

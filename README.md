@@ -69,3 +69,12 @@ Course URL -> [Git e Github Controle e Compartilhe seu Código](https://www.alur
 * O **`git checkout`** serve para deixar a cópia do código da nossa aplicação no estado que desejarmos:
     * **`git checkout <branch>`** deixa o código no estado de uma **branch** com o nome **<branch>**;
     * **`git checkout <hash>`** deixa o código no estado do *commit* com o hash <hash>.
+
+## 06 - Gerando Entregas
+* É possível visualizar quais alterações foram realizadas em cada arquivo, com o comando **`git diff`**;
+* Digitando apenas **`git diff`**, vemos as alterações em nossos arquivos que não foram adicionadas para **commit** (com **`git add`**);
+* É possível comparar as alterações entre duas *branches* com **`git diff <branch1>..<branch2>`**
+* É possível comparar as alterações feitas entre um **commit** e outro, através do comando **`git diff <commit1>..<commit2>`**;
+* O Git nos possibilita salvar marcos da nossa aplicação, como por exemplo, lançamento de versões, através do **`git tag`**;
+* O comando **`git tag -a`** é utilizado para gerar uma nova tag;
+* ***Releases*** do GitHub, que são geradas para cada tag do Git criada em nosso repositório.
