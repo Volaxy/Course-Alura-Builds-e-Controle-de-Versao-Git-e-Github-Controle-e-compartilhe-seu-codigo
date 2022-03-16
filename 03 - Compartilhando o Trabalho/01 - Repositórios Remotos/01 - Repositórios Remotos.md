@@ -1,11 +1,11 @@
-Para criar um repositório do Git que somente armazenará as alterações, ou seja, não o acessaremos para editar arquivos, por exemplo, usaremos **`git init --bare`**, cujo parâmetro indica que este repositório é puro, que contém apenas as alterações dos arquivos, e não uma cópia física de cada um dos arquivos. Isso nos traz algumas facilidades e permite que adicionemos este repositório remotamente em outro. Com este comando nós criamos um repositório que não terá a working tree, ou seja, não conterá uma cópia dos nossos arquivos. Como o repositório servirá apenas como servidor, para que outros membros da equipe sincronizem seus trabalhos, poupamos espaço de armazenamento desta forma.
+Para iniciar um repositório que vai conter somente as alterações dos arquivos, sem os arquivos originais disponíveis para edição, usamos o comando `git init --bare`.
 
-Se executarmos o comando **`git remote`**, todos os repositórios remotos que o repositório local conhece são listados. Portanto, adicionaremos um, com **`git remote add local {URL}`**, e para quantos repositórios remotos quisermos, poderemos dar algum nome, no caso, **local**, também incluiremos um caminho, que poderá ser uma URL de um servidor pela internet, um endereço na rede, inclusive de outro computador, qualquer endereço válido para um repositório Git. Neste caso, será uma pasta no próprio servidor.
+Um **repositório local** é o repositório em que alguem modifica e usa os seus arquivos, e um **repositório remoto** é onde os arquivos do projeto serão salvos para serem usados como base para os **repositórios locais**.
 
-Depois que pressionamos "Enter", aparentemente nada acontece, e se usarmos o comando **`git remote`**, o retorno será **local**. Se quisermos garantir que o endereço esteja correto, poderemos executar **`git remote -v`**, que faz com que o endereço de **local** seja exibido. Além disso, é indicado que os dados deste caminho serão buscados (**fetch**), e enviados para este mesmo caminho (**push**).
+Para mostrar todos os **repositórios remotos** que estão vinculados com o nosso **repositório local**, usamos `git remote`.
 
-Em situações complexas, de uma infraestrutura de redes mais robusta, poderíamos fazer o envio para um local e a busca viria de outro.
+Para adicionar um novo **repositório remoto** para vincular, usamos o comando `git remote add NOME CAMINHO`.
 
-Em uma situação ficticia, acessaremos a pasta chamada "ana", e ela então precisará clonar o repositório, é assim que chamamos quando queremos trazer todos os dados de um repositório remoto para o nosso repositório local pela primeira vez.
+Para mostra o **endereço** de um **repositório remoto**, usamos o comando `git remote -v`, onde o `(fetch)` significa que ele irá buscar os dados desse caminho, e o `(push)` que ele irá enviar os dados para esse caminho.
 
-Sendo assim, executaremos **`git clone /c/Users/ALURA/Documents/git-e-github/servidor`**, para que sejam trazidos os dados do repositório localizado neste endereço. Isso fará com que dentro da pasta "ana" seja criada uma pasta chamada "servidor". Porém, não é o que queremos; queremos que a pasta seja "projeto", por exemplo, e para isso executaremos **`git clone /c/Users/ALURA/Documents/git-e-github/servidor projeto`**.
+Para clonar os arquivos de um repositório, usamos o comando `git clone CAMINHO [NOME]`.
