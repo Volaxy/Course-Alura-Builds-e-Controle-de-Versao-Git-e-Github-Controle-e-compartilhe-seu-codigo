@@ -2,6 +2,7 @@
 Alura course on code versioning with Git and GitHub.
 
 Course URL -> [Git e Github Controle e Compartilhe seu Código](https://www.alura.com.br/curso-online-git-github-controle-de-versao)
+
 ![Git e Github Controle e Compartilhe seu Código](https://www.alura.com.br/assets/api/share/curso-git-github-controle-de-versao.png)
 ***
 ## Useful Links
@@ -11,10 +12,9 @@ Course URL -> [Git e Github Controle e Compartilhe seu Código](https://www.alur
 * [Visualizing Git](https://git-school.github.io/visualizing-git/) - Site de demonstração de **commits** e **branchs**.
 
 ## Acronyms
-* VCS - (Version Control System) / Sistema de Controle de Versões
+* VCS - (**V**ersion **C**ontrol **S**ystem) / Sistema de Controle de Versões
 
 ## 01 - O que é Git?
-
 * O que são (e para que servem) sistemas de controle de versões e como eles podem ajudar o nosso fluxo de desenvolvimento.
     * Nos ajudam a manter um histórico de alterações;
     * Nos ajudam a ter controle sobre cada alteração no código;

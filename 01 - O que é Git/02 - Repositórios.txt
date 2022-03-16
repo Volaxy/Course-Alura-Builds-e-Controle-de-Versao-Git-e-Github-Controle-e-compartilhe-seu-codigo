@@ -1,4 +1,0 @@
-• O projeto que desenvolveremos durante o curso será uma página HTML de cursos na Alura, simples, sem estilos.
-• Queremos que um repositório do Git seja inicializado, e para tal usamos o comando git init.
-• Assim, todas as alterações que forem realizadas no arquivo localizado dentro deste repositório poderão ser mostradas pelo Git, com indicações do que foi modificado, quem modificou, quando, e por aí vai.
-• Um comando que mostra o estado do nosso repositório, ou seja, quais arquivos foram alterados, ou não, é o git status. Ao ser rodado, neste caso, por exemplo, ele nos informa que está sendo rodado no ramo, ou branch master (On branch master), e que não possui nenhum commit (No commits yet).
