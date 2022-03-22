@@ -1,13 +1,3 @@
-Queremos observar o projeto como um todo no momento em que aplicamos um determinado *merge*, ou então um pouco antes, em outro commit. Executamos o **`git revert`** anteriormente com aquele commit e o hash, mas poderemos executar as manipulações em um commit com os seus primeiros caracteres. O comando **`git log --oneline`**, por exemplo, nos traz os hashs com apenas os sete primeiros caracteres, o suficiente para identificá-los de forma única.
+Para voltar para o **estado de um commit específico**, usamos o comando `git checkout HASH_CODE`, caso a gente **volte para a branch master** com `git checkout master`, todas as alterações e commits feitos anteriormente serão ignorados.
 
-No caso, queremos navegar ao commit de hash **ea539b3**. Já conversamos que o comando **`git checkout`** muda o estado da aplicação, seja desfazendo alterações, navegando entre branches ou commits. Assim, é possível utilizarmos **`git checkout ea539b3`**, e com isso a mensagem que se exibe indica que estamos em um estado de cabeça (**HEAD**) desanexado (**detached**) do controle de versões.
-
-Isto é, não estamos mais em nenhum branch, e sim em um commit específico. Não estamos em uma linha bem definida de commit, uma linha de trabalho bem definida do Git. Então, poderemos fazer algumas modificações experimentais, mas também descartar qualquer elemento deste branch sem fazer mais nada. Isto quer dizer que se voltarmos à **master**, tudo que commitarmos aqui será ignorado.
-
-Se quisermos manter os commits feitos a partir deste ponto, será necessário criar uma nova branch.
-
-Se realizarmos qualquer alteração, incluindo outro **`git commit`**, o **HEAD** se locomoverá para um lugar sem nome, uma branch inexistente. E se fizermos **`git checkout master`** nunca mais conseguiremos acessar o commit em que estávamos anteriormente, que fica desanexado das linhas de desenvolvimento.
-
-Repetiremos o comando **`git checkout 54727de`** e, se quisermos fazer alterações que sejam salvas a partir daqui, será necessário criar uma branch antes, a ser modificado a partir deste commit. Usaremos **`git checkout -b novo-branch`**, de forma a não estarmos mais desassociados da linha de desenvolvimento, o que se confirma se realizarmos um novo commit.
-
-Poderemos fazer o **`git checkout master`**, mas se em algum momento quisermos voltar a trabalhar em **novo-branch**, basta usarmos o **`git checkout`**. Assim, conseguimos navegar entre os estados da nossa aplicação, de fato, "viajar no tempo" no projeto. Temos bastante conhecimento e poderemos fazer praticamente tudo o que é necessário para um trabalho do dia a dia, com o sistema de gerenciamento de versões.
+Para fazer o git **salvar os commits feitos quando voltamos em um commit**, criamos uma nova branch, e feito os commits na nova branch, podemos mudar para a branch criada a partir da branch master quando presisarmos.
